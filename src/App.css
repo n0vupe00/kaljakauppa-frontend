@@ -23,7 +23,7 @@ body, html {
 
 .parallax {
   /* The image used */
-  background-image: url("Images/beer-g8ef14c197_1920.jpg");
+  background-image: url("beer-g8ef14c197_1920.jpg"); 
   height: 100%;
   opacity: -2,8;
   

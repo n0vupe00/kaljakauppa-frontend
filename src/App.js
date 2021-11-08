@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./bootstrap.min.css"
 import "./App.css";
 import Navbar1 from "./Navbar";
 export default function App() {
