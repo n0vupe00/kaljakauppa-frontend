@@ -6,12 +6,12 @@ export default function App() {
   return (
     <div class="parallax" style={{ height: "1500px" }}>
       <Navbar1 />
-      <h3 style={{ textAlign: "center", paddingTop: 350, fontFamily: "Anton-regular", color: "#F6F6E3"}}>Saunakaljat? Ruoan kanssa? Naama täyteen?</h3>
-      <p style={{ textAlign: "center", fontFamily: "Anton-regular", color: "#F6F6E3" }}>Joka makuun vaikka olisi paska maku</p>
-      <p style={{ textAlign: "center", fontFamily: "Anton-regular", color: "#F6F6E3" }}>- Vuodesta 2021</p>
+      <h3 style={{ textAlign: "center", paddingTop: 350, color: "#F6F6E3"}}>Saunakaljat? Ruoan kanssa? Naama täyteen?</h3>
+      <p style={{ textAlign: "center", color: "#F6F6E3" }}>Joka makuun vaikka olisi paska maku</p>
+      <p style={{ textAlign: "center", color: "#F6F6E3" }}>- Vuodesta 2021</p>
 
-      <p style={{ textAlign: "center", paddingTop: 150, fontFamily: "Anton-regular", color: "#F6F6E3" }}>TIK21KM Ryhmä1</p>
-      <p style={{ textAlign: "center", fontFamily: "Anton-regular", color: "#F6F6E3" }}>Emilia, Pekka, Eero, Mikko L, Mikko R</p>
+      <p style={{ textAlign: "center", paddingTop: 150, color: "#F6F6E3" }}>TIK21KM Ryhmä1</p>
+      <p style={{ textAlign: "center", color: "#F6F6E3" }}>Emilia, Pekka, Eero, Mikko L, Mikko R</p>
 
 
     </div>
