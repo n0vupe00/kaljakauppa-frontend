@@ -13,8 +13,12 @@ body, html {
   height: 100%;
 }
 
-#collasible-nav-dropdown {
+#collapsible-nav-dropdown {
   color: #F6F6E3;
+}
+
+.dropdown-menu {
+  background-color:sienna !important;
 }
 
 #navi1 {

@@ -11,7 +11,7 @@ export default function Navbar1() {
         <Nav className="mr-auto">
           <Nav.Link style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3"}} href="#home">Meistä</Nav.Link>
           <Nav.Link style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3"}} href="#link">Yhteystiedot</Nav.Link>
-          <NavDropdown style={{ fontFamily: "Arial, Helvetica, sans-serif" }} title="Tuotekategoriat" id="collasible-nav-dropdown">
+          <NavDropdown style={{ fontFamily: "Arial, Helvetica, sans-serif" }} title="Tuotekategoriat" id="collapsible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">PILSNERIT</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">LAGERIT</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">IPAT, APAT, NEIPAT</NavDropdown.Item>
