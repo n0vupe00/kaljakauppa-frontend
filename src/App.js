@@ -2,8 +2,10 @@ import React from "react";
 import "./bootstrap.min.css"
 import "./App.css";
 import Navbar1 from "./Navbar";
+import Footer from "./Footer";
 export default function App() {
   return (
+    <>
     <div class="parallax" style={{ height: "1500px" }}>
       <Navbar1 />
       <h3 style={{ textAlign: "center", paddingTop: 350, color: "#F6F6E3"}}>Saunakaljat? Ruoan kanssa? Naama täyteen?</h3>
@@ -15,6 +17,8 @@ export default function App() {
 
 
     </div>
+    <Footer />
+    </>
   );
 }
 

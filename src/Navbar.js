@@ -12,14 +12,13 @@ export default function Navbar1() {
           <Nav.Link style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3"}} href="#home">Meistä</Nav.Link>
           <Nav.Link style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3"}} href="#link">Yhteystiedot</Nav.Link>
           <NavDropdown style={{ fontFamily: "Arial, Helvetica, sans-serif" }} title="Tuotekategoriat" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">PILSNERIT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">LAGERIT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">IPAT, APAT, NEIPAT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">SOURIT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">GOSET</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">STOUTIT, PORTTERIT</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">LAGERIT JA PILSNERIT</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">IPAT, APAT JA NEIPAT</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">SOURIT JA GOSET</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">STOUTIT JA PORTTERIT</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">ALKOHOLITTOMAT</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">ALKOHOLITTOMAT</NavDropdown.Item>
+            
           </NavDropdown>
           <Nav.Link style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 32 }} href="#home">Ostoskori</Nav.Link>
         </Nav>
