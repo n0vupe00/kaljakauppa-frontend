@@ -11,7 +11,7 @@ export default function Meista () {
         <p style={{ textAlign: "center", color: "#F6F6E3" }}>Oulun Ammattikorkeakoulun opiskelijoiden vuonna 2021 perustama
             olutkauppa. Kuten kaikki tietää, opiskelijoilla on aina tiukkaa rahasta. Mietimme, että mistä saisi vähän lisätuloa
             kukkaron pohjalle ja sitä kautta vähän parempaa kinkkua leivän päälle? No mikäs se Suomessa paremmin myisi
-            kuin alkoholi!</p>
+            kuin alkoholi! Tervetuloa sivuille!</p>
         <p>Laaja tuotevalikoimamme takaa sen, että jokaiselle löytyy jotain. Olit sitten hifistelevä bissenörtti, joka
             pohtii oluen eri vivahteita tai viikonloppu spurgu. Meiltä homma hoituu!
         </p>
