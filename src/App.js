@@ -2,7 +2,7 @@ import React from "react";
 import "./bootstrap.min.css"
 import "./App.css";
 import Navbar1 from "./Navbar";
-import Footer from "./Footer";
+import Footer from "./inc/Footer";
 export default function App() {
   return (
     <>
