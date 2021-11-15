@@ -1,0 +1,23 @@
+alcohol-free lager:
+Oljenkeltainen, keskitäyteläinen, keskiasteisesti humaloitu, keksinen, kevyen viljainen, hennon hunajainen
+
+alcohol-free pale ale:
+Kullankeltainen, keskitäyteläinen, keskiasteisesti humaloitu, hedelmäinen, sitruksinen
+
+raspberry sour ale:
+Punertava, samea, keskitäyteläinen, miedosti humaloitu, villivadelmainen, sitruksinen, valkoherukkainen, hapankirsikkainen
+
+india pale ale:
+Meripihkankeltainen, keskitäyteläinen, voimakkaasti humaloitu, havuinen, sitruksinen, hedelmäinen
+
+amber lager:
+Meripihkanruskea, runsasvaahtoinen, täyteläinen, keskiasteisesti humaloitu, ruisleipäinen, greippinen, yrttinen
+
+summer lager:
+Vaaleankeltainen, kevyt, miedosti humaloitu, viljainen, hennon yrttinen
+
+chocolate porter:
+Ruskea, täyteläinen, miedosti humaloitu, kaakaoinen, kahvinen, suklainen
+
+oatmeal stout:
+Kahvinruskea, samea, täyteläinen, keskiasteisesti humaloitu, paahtomaltainen, suklainen, kahvinen, mausteinen, kevyen pähkinäinen
