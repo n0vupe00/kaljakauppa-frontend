@@ -16,7 +16,7 @@ export default function Navbar1() {
             <NavDropdown.Item href="#action/3.2">IPAT, APAT JA NEIPAT</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">SOURIT JA GOSET</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">STOUTIT JA PORTTERIT</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">ALKOHOLITTOMAT</NavDropdown.Item>
+            {/* <NavDropdown.Item href="#action/3.3">ALKOHOLITTOMAT</NavDropdown.Item> */}
             <NavDropdown.Divider />
             
           </NavDropdown>
