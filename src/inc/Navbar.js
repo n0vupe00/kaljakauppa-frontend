@@ -23,7 +23,7 @@ export default function Navbar({url,setCategory,cart}) {
   },[])
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top ">
       <div className="container-fluid">
         <Link className="navbar-brand" style={{ fontFamily: "Arial, Helvetica, sans-serif", fontWeight: "bold", fontSize: 40, color: "#F6F6E3"}} to="/">Pieni Olutkauppa</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
