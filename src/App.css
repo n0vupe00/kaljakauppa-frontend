@@ -19,6 +19,8 @@ body, html {
 
 .dropdown-menu {
   background-color:sienna !important;
+  font-family: Arial, Helvetica, sans-serif;
+  /*tekstin väri pitäis muuttuu*/
 }
 
 #navi1 {
