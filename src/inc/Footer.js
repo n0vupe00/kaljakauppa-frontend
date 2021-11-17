@@ -6,7 +6,7 @@ export default function Footer() {
     return (
        <footer className="footer">
            <div className="container">
-               <span className="text-muted">Emilia Kaihua, Mikko Roos, Mikko Lainas, Pekka Vuokila, Eero Vilkuna</span>
+               <span className="accordion-body">Emilia Kaihua, Mikko Roos, Mikko Lainas, Pekka Vuokila, Eero Vilkuna</span>
            </div>
        </footer>
     )

@@ -6,5 +6,6 @@ footer {
    
     text-align: center;
     background-color: sienna;
-    /*muutetaanko läpinäkyvyyttä?*/
+    opacity: 0.6;
+    color: #F6F6E3;
   }
