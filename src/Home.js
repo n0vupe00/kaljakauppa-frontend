@@ -23,14 +23,14 @@ export default function Home({url,category,addToCart}) {
 
   return (
     <div style={{'padding-top': '100px'}}>
-      <h3>Products for {category?.name}</h3>
+      <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 30}}> {category?.name}</h3>
         {products.map(product => (
           <div key={product.id}>
-            <p>
-              {product.name}
+            <p style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
+              {product.name }
             </p>
             
-            <button class="btn btn-primary" type="button" onClick={e => addToCart(product)}>Add</button>
+            <button class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
           </div>
         ))}
     </div>
