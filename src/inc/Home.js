@@ -29,7 +29,9 @@ export default function Home({url,category,addToCart}) {
             <p style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
               {product.name }
             </p>
-            
+            <div>
+            <img src={url + 'images/' + product.image + '.png'} alt="" />
+            </div>
             <button class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
           </div>
         ))}
