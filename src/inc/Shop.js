@@ -1,6 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
-import { data } from "/Users/eerovilkuna/Documents/Kaljakauppa/Kaljakauppa back";
+import { data } from " ";
 import Product from "./Product";
 
 
