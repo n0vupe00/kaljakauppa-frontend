@@ -25,7 +25,7 @@ export default function Home({url,category,addToCart}) {
     <div style={{'padding-top': '100px'}}>
       <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 30}}> {category?.name}</h3>
         {products.map(product => (
-          <div key={product.id}>
+          <div key={product.id} style={{display: 'inline-block', 'padding-left': '100px'}}>
             <p style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
               {product.name }
             </p>
