@@ -1,7 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { Card } from "@material-ui/core";
-import Col from "react-bootstrap/Col";
+import './Card.css';
 
 const Product = ({ product }) => (
   <Col xs={12} md={6} lg={4} key={product.category_id}>
