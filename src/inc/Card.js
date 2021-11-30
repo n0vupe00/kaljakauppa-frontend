@@ -1,20 +1,20 @@
 import React from "react";
 import './Card.css';
 
-const Product = ({ product }) => (
-  <Col xs={12} md={6} lg={4} key={product.category_id}>
-    <Card style={{ width: "18rem" }}>
-      <Card.Header></Card.Header>
-      <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>{product.price}</Card.Text>
-        <Card.Text>{product.alcohol}</Card.Text>
-        <Card.Text>{product.size}</Card.Text>
+const Card = (product) => (
+  <Col key={product.category_id}>
+    <Card>
+      <Header></Header>
+      <Img variant="top" src={product.image}/>
+      <Body>
+        <Title>{product.name}</Title>
+        <Text>{product.price}</Text>
+        <Text>{product.alcohol}</Text>
+        <Text>{product.size}</Text>
         <Button variant="primary">Add to cart</Button>
-      </Card.Body>
+      </Body>
     </Card>
   </Col>
 );
 
-export default Product;
+export default Card;
