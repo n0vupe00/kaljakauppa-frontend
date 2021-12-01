@@ -53,6 +53,11 @@ function App() {
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
   }
 
+  function emptyCart() {
+    setCart([]);
+    localStorage.removeItem('cart');
+  }
+
   function removeFromCart(product) {
     const itemsWithoutRemoved = cart.filter(item => item.id !== product.id);
     setCart(itemsWithoutRemoved);
@@ -80,7 +85,9 @@ function App() {
               <Order
                 cart={cart}
                 updateAmount={updateAmount}
+                empty={emptyCart}
                 removeFromCart={removeFromCart}
+                url={URL}
               />
             }
             />
