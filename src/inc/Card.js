@@ -1,20 +1,13 @@
 import React from "react";
+import Button from '@restart/ui/esm/Button';
 import './Card.css';
 
-const Card = (product) => (
-  <Col key={product.category_id}>
-    <Card>
-      <Header></Header>
-      <Img variant="top" src={product.image}/>
-      <Body>
-        <Title>{product.name}</Title>
-        <Text>{product.price}</Text>
-        <Text>{product.alcohol}</Text>
-        <Text>{product.size}</Text>
-        <Button variant="primary">Add to cart</Button>
-      </Body>
-    </Card>
-  </Col>
+const Card = ({product}) => (
+  <img src= {product.image}/>,
+  <h3>{product.name}</h3>,
+  <p>{product.price}</p>,
+  <p>{product.size}</p>,
+  <p>{product.alcohol}</p>
 );
 
 export default Card;
