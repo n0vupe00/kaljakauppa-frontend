@@ -95,7 +95,8 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
                         value={product.amount}
                         />
                     </td>
-                    <td><a href="#" onClick={() => removeFromCart(product)}>Poista</a></td>
+                    <td><a href="#" style={{fontFamily: "Arial, Helvetica, sans-serif",color: "#F6F6E3",}}
+                     onClick={() => removeFromCart(product)}>Poista</a></td>
                 </tr>
                 );
             })}
@@ -103,7 +104,9 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
                 <td className="sumrow">Loppusumma:</td>
                 <td className="sumrow">{sum.toFixed(2)} € </td>
                 <td className="sumrow"></td>
-                <td className="sumrow"><a href="#" onClick={e => empty()}>Tyhjennä</a></td>
+                <td className="sumrow"><a href="#"
+                style={{fontFamily: "Arial, Helvetica, sans-serif",color: "#F6F6E3",}}
+                 onClick={e => empty()}>Tyhjennä</a></td>
             </tr>
             </tbody>
             </table>
