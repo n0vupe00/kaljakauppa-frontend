@@ -23,6 +23,9 @@ export default function Home({url,category,addToCart}) {
 
   return (
     <div style={{'padding-top': '100px'}}>
+    <h1 style={{"paddingBottom": "50px"}}>Tilausehdot</h1>
+      <p style={{fontSize: 20}}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja muutakin kuin kärpäsiä lompakossa.</p>
+      <p style={{fontSize: 20}}>Asuinpaikka Suomessa on myös suotavaa, sillä emme toimita ulkomaille. Mukavia ostoshetkiä!</p>
       <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 30}}> {category?.name}</h3>
         {products.map(product => (
           <div key={product.id} style={{display: 'inline-block', 'padding-left': '100px'}}>
