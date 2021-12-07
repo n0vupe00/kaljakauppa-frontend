@@ -32,11 +32,7 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
             }
         })
         .then((response) => {
-            setFirstname(json);
-            setLastname(json);
-            setAddress(json);
-            setZip(json);
-            setCity(json);
+            
             empty();
             setFinished(true);
         }).catch (error => {
