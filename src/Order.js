@@ -106,7 +106,7 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
             </tr>
             </tbody>
             </table>
-            {cart.lenght > 0 &&
+            
             <>
                 <h3 className="header">Tilaajan tiedot</h3>
                 <form onSubmit={order}>
@@ -136,7 +136,7 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
 
                 </form>
                 </>
-            }
+            
         </div>
         );
     }
