@@ -9,7 +9,7 @@ export default function Navbar({ url, setCategory, cart }) {
 
   useEffect(() => {
     axios
-      .get(url + "getgategories.php")
+      .get(url + "product/getgategories.php")
       .then((response) => {
         const json = response.data;
         setCategories(json);

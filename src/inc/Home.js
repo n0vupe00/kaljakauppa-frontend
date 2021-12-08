@@ -7,7 +7,7 @@ export default function Home({url,category,addToCart}) {
 
   useEffect(() => {
     if (category !== null) {
-      axios.get(url + 'getproducts.php/' + category?.id)
+      axios.get(url + 'product/getproducts.php/' + category?.id)
         .then((response) => {
           const json = response.data;
           setProducts(json);
