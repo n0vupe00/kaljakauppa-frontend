@@ -53,7 +53,7 @@
 }
 
 
-.btn {
+.modalContainer .btn {
   color:inherit;
   font-family:inherit;
   font-size: 1.5rem;
@@ -65,16 +65,16 @@
   transition: all 0.2s;
 }
 
-.btn:last-child {
+.modalContainer .btn:last-child {
   margin: 0;
 }
 
-.btn:hover {
+.modalContainer .btn:hover {
   box-shadow: 0.4rem 0.4rem 0 black;
   transform: translate(-0.4rem, -0.4rem);
 }
 
-.btn:active {
+.modalContainer .btn:active {
   box-shadow: 0 0 0 black;
   transform: translate(0, 0);
 }
