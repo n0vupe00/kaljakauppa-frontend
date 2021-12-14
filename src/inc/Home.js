@@ -35,7 +35,7 @@ export default function Home({url,category,addToCart}) {
             <div>
             <img src={url + 'images/' + product.image + '.png'} alt="" />
             </div>
-            <button class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
+            <button style={{marginTop: "20px", backgroundColor: 'transparent'}}class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
           </div>
         ))}
     </div>
