@@ -26,14 +26,23 @@ export default function Home({url,category,addToCart}) {
    
       <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", "paddingTop": "100px", fontSize: 30}}> {category?.name}</h3>
         {products.map(product => (
-          <div key={product.id} style={{textAlign: "center", display: 'inline-block',marginRight:"50px", "paddingTop": "50px"}}>
-            <p style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
+          <div key={product.id} className="row" style={{textAlign: "center", display: 'inline-block',marginRight:"50px", "paddingTop": "50px"}}>
+            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
               {product.name }
             </p>
+            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+              {product.info }
+            </p>
+            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+              {product.alcohol } %
+            </p>
+            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+              {product.price } €
+            </p>
             <div>
-            <img style={{borderRadius: "10px"}} src={url + 'images/' + product.image + '.png'} alt="" />
+            <img className="col-4" style={{borderRadius: "10px", 'width': '200px'}} src={url + 'images/' + product.image + '.png'} alt="" />
             </div>
-            <button style={{marginTop: "20px", backgroundColor: 'transparent'}}class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
+            <button className="col-4" style={{marginTop: "20px", backgroundColor: 'transparent'}}class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
           </div>
         ))}
     </div>
