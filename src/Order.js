@@ -74,7 +74,7 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
     return (
         <div style={{'padding-top': '100px'}}>
             <h3> Shopping cart </h3>
-            <table className="table">
+            <table  style={{marginTop:"20px", marginBottom: "20px"}} className="table">
                 <tbody>
             { cart.map(product=> {
                 sum+=parseFloat(product.price * product.amount);
@@ -101,7 +101,7 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
                 <td className="sumrow">{sum.toFixed(2)} € </td>
                 <td className="sumrow"></td>
                 <td className="sumrow"><a href="#"
-                style={{fontFamily: "Arial, Helvetica, sans-serif",color: "#F6F6E3",}}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif",color: "#F6F6E3",}}
                  onClick={e => empty()}>Tyhjennä</a></td>
             </tr>
             </tbody>
@@ -112,26 +112,26 @@ export default function Order({cart,updateAmount,removeFromCart, empty, url}) {
                 <form onSubmit={order}>
                     <div className="form-group">
                         <label>Etunimi:</label>
-                        <input className="form-control" onChange={e => setFirstname(e.target.value)}/>
+                        <input style={{width: "50%"}} className="form-control" onChange={e => setFirstname(e.target.value)}/>
                     </div>
                     <div className="form-group">
                         <label>Sukunimi:</label>
-                        <input className="form-control" onChange={e => setLastname(e.target.value)}/>
+                        <input style={{width: "50%"}} className="form-control" onChange={e => setLastname(e.target.value)}/>
                     </div>
                     <div className="form-group">
                         <label>Osoite:</label>
-                        <input className="form-control" onChange={e => setAddress(e.target.value)}/>
+                        <input style={{width: "50%"}} className="form-control" onChange={e => setAddress(e.target.value)}/>
                     </div>
                     <div className="form-group">
                         <label>Postinumero:</label>
-                        <input className="form-control" onChange={e => setZip(e.target.value)}/>
+                        <input style={{width: "50%"}} className="form-control" onChange={e => setZip(e.target.value)}/>
                     </div>
                     <div className="form-group">
                         <label>Kaupunki:</label>
-                        <input className="form-control" onChange={e => setCity(e.target.value)}/>
+                        <input style={{width: "50%"}} className="form-control" onChange={e => setCity(e.target.value)}/>
                     </div>
                     <div className="buttons">
-                        <button className="btn btn-primary">Tilaa</button>
+                        <button style={{backgroundColor: "transparent", marginTop: "15px", borderColor: "white"}} className="btn btn-primary" >Tilaa</button>
                     </div>
 
                 </form>
