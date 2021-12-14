@@ -6,6 +6,7 @@ import Footer from "./inc/Footer";
 import Home from "./inc/Home";
 import Order from "./Order";
 import Modal from "./inc/Modal";
+import OriginalHome from "./inc/OriginalHome";
 
 
 const URL = "http://localhost/kaljakauppa-backend/";
@@ -77,6 +78,13 @@ function App() {
         <Navbar url={URL} setCategory={setCategory} cart={cart} />
         <div id="content" className="container-fluid">
           <Switch>
+         {/*  <Route
+              path="/inc/OriginalHome"
+              render={() => (
+                <OriginalHome  />
+              )}
+              exact
+            /> */}
             <Route
               path="/"
               render={() => (
