@@ -77,7 +77,7 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
                 <p style={{ fontSize: 20 }}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja muutakin kuin kärpäsiä lompakossa.</p>
                 <p style={{marginBottom: "50px", fontSize: 20 }}>Asuinpaikka Suomessa on myös suotavaa, sillä emme toimita ulkomaille. Mukavia ostoshetkiä!</p>
                 <h3> Shopping cart </h3>
-                <table style={{ marginTop: "20px", marginBottom: "20px" }} className="table">
+                <table style={{width: "900px", marginTop: "20px", marginBottom: "20px" }} className="table">
                     <tbody>
                         {cart.map(product => {
                             sum += parseFloat(product.price * product.amount);
