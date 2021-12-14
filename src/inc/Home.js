@@ -51,7 +51,7 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import Navbar1 from "./Navbar";
 
-export default function Home() {
+export default function OriginaHome() {
     return (
       <div class="parallax" style={{ height: "1500px" }}>
         <Navbar1 />
