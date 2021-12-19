@@ -31,14 +31,14 @@ export default function Navbar({ url, setCategory, cart }) {
         <Link
           className="navbar-brand"
           style={{
-            fontFamily: "Arial, Helvetica, sans-serif",
+            fontFamily: 'Courier New',
             fontWeight: "bold",
-            fontSize: 40,
+            fontSize: 50,
             color: "#F6F6E3",
           }}
           to="/"
         >
-          Pieni Olutkauppa
+          A-Team Brewery
         </Link>
         <button
           className="navbar-toggler"
@@ -59,7 +59,8 @@ export default function Navbar({ url, setCategory, cart }) {
               <a
                 className="nav-link dropdown-toggle"
                 style={{
-                  fontFamily: "Arial, Helvetica, sans-serif",
+                  fontFamily: 'Courier New',
+                  fontWeight: 'bold',
                   color: "#F6F6E3",
                 }}
                 href="#"

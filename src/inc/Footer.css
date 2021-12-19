@@ -8,4 +8,9 @@ footer {
     background-color: sienna;
     opacity: 0.6;
     color: #F6F6E3;
-  }
+}
+
+.accordion-body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}

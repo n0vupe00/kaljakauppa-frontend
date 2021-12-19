@@ -10,3 +10,12 @@ div {
 div tr {
     color:#F6F6E3;
 }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h3, td, label, p {
+    font-family: 'Courier New', Courier, monospace;
+}

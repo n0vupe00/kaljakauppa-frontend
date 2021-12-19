@@ -24,25 +24,25 @@ export default function Home({url,category,addToCart}) {
   return (
     <div style={{'padding-left': '100px'}}>
    
-      <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", "paddingTop": "100px", fontSize: 30}}> {category?.name}</h3>
+      <h3 style={{ fontFamily: "Courier New", color: "#F6F6E3", "paddingTop": "100px", fontSize: 30}}> {category?.name}</h3>
         {products.map(product => (
-          <div key={product.id} className="row" style={{textAlign: "center", display: 'inline-block',marginRight:"50px"}}>
-            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
+          <div key={product.id} className="row" style={{textAlign: "center", display: 'inline-block',marginRight:"50px", "paddingTop": "50px"}}>
+            <p className="col-12" style={{ fontFamily: "Courier New", color: "#F6F6E3", fontSize: 20}}>
               {product.name }
             </p>
-            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+            <p className="col-12" style={{ fontFamily: "Courier New", color: "#F6F6E3", fontSize: 14}}>
               {product.info }
             </p>
-            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+            <p className="col-12" style={{ fontFamily: "Courier New", color: "#F6F6E3", fontSize: 14}}>
               {product.alcohol } %
             </p>
-            <p className="col-12" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 12}}>
+            <p className="col-12" style={{ fontFamily: "Courier New", color: "#F6F6E3", fontSize: 14}}>
               {product.price } €
             </p>
             <div>
             <img className="col-4" style={{borderRadius: "10px", 'width': '120px'}} src={url + 'images/' + product.image + '.png'} alt="" />
             </div>
-            <button className="col-4" style={{marginTop: "20px", backgroundColor: 'transparent'}}class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
+            <button className="col-4" style={{marginTop: "20px", backgroundColor: 'transparent'}}class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää ostoskoriin</button>
           </div>
         ))}
     </div>

@@ -73,10 +73,10 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
     if (finished === false) {
         return (
             <div style={{ 'padding-top': '100px' }}>
-                <h1 style={{ "paddingBottom": "50px", marginTop: "20px" }}>Tilausehdot</h1>
-                <p style={{ fontSize: 20 }}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja muutakin kuin kärpäsiä lompakossa.</p>
+                <h1 style={{ "paddingBottom": "50px", marginTop: "20px", fontSize: 42 }}>Tilausehdot</h1>
+                <p style={{ fontSize: 20 }}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja olla muutakin kuin kärpäsiä lompakossa.</p>
                 <p style={{marginBottom: "50px", fontSize: 20 }}>Asuinpaikka Suomessa on myös suotavaa, sillä emme toimita ulkomaille. Mukavia ostoshetkiä!</p>
-                <h3> Shopping cart </h3>
+                <h3> Ostoskori </h3>
                 <table style={{width: "900px", marginTop: "20px", marginBottom: "20px" }} className="table">
                     <tbody>
                         {cart.map(product => {
@@ -94,7 +94,7 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
                                             value={product.amount}
                                         />
                                     </td>
-                                    <td><a href="#" style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", }}
+                                    <td><a href="#" style={{ fontFamily: "Courier New", color: "#F6F6E3", }}
                                         onClick={() => removeFromCart(product)}>Poista</a></td>
                                 </tr>
                             );
@@ -104,7 +104,7 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
                             <td className="sumrow">{sum.toFixed(2)} € </td>
                             <td className="sumrow"></td>
                             <td className="sumrow"><a href="#"
-                                style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", }}
+                                style={{ fontFamily: "Courier New", color: "#F6F6E3", }}
                                 onClick={e => empty()}>Tyhjennä</a></td>
                         </tr>
                     </tbody>
@@ -134,7 +134,7 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
                             <input style={{ width: "50%" }} className="form-control" onChange={e => setCity(e.target.value)} />
                         </div>
                         <div className="buttons">
-                            <button style={{ backgroundColor: "transparent", marginTop: "15px", borderColor: "white" }} className="btn btn-primary" >Tilaa</button>
+                            <button style={{ backgroundColor: "transparent", marginTop: "15px", borderColor: "white", fontFamily: "Courier New" }} className="btn btn-primary" >Tilaa</button>
                         </div>
 
                     </form>
@@ -144,6 +144,6 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
         );
     }
     else {
-        return (<h3 style={{ 'padding-top': '200px' }}>Kiitos tilauksestasi!</h3>);
+        return (<h3 style={{ 'padding-top': '200px', fontFamily: "Courier New" }}>Kiitos tilauksestasi!</h3>);
     }
 }
