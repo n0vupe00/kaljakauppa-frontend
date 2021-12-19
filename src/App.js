@@ -7,6 +7,8 @@ import Home from "./inc/Home";
 import Order from "./Order";
 import Modal from "./inc/Modal";
 
+import OriginalHome from "./inc/OriginalHome";
+
 const URL = "http://localhost/kaljakauppa-backend/";
 
 function App() {
@@ -69,13 +71,19 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        {modalOpen && <Modal setOpenModal={setModalOpen} />}
-      </div>
-      <div class="parallax" style={{ height: "1500px" }}>
+    <div> {modalOpen && <Modal setOpenModal={setModalOpen} />} </div>
+      <div>
+      
         <Navbar url={URL} setCategory={setCategory} cart={cart} />
-        <div id="content" className="container-fluid">
+        <div>
           <Switch>
+         {/*  <Route
+              path="/inc/OriginalHome"
+              render={() => (
+                <OriginalHome  />
+              )}
+              exact
+            /> */}
             <Route
               path="/"
               render={() => (

@@ -1,70 +1,55 @@
-import React,{useState,useEffect} from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import "./Home.css";
+import Modal from "./Modal";
 
-export default function Home({url,category,addToCart}) {
+export default function Home({ url, category, addToCart }) {
   const [products, setProducts] = useState([]);
-
+  const [modalOpen, setModalOpen] = useState(true);
   useEffect(() => {
     if (category !== null) {
-      axios.get(url + 'product/getproducts.php/' + category?.id)
+      axios
+        .get(url + "product/getproducts.php/" + category?.id)
         .then((response) => {
           const json = response.data;
           setProducts(json);
-        }).catch (error => {
+        })
+        .catch((error) => {
           if (error.response === undefined) {
             alert(error);
           } else {
             alert(error.response.data.error);
           }
-        })
-    } 
-  },[category])
+        });
+    }
+  }, [category]);
 
   return (
-    <div style={{'padding-top': '100px'}}>
-    <h1 style={{"paddingBottom": "50px"}}>Tilausehdot</h1>
-      <p style={{fontSize: 20}}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja muutakin kuin kärpäsiä lompakossa.</p>
-      <p style={{fontSize: 20}}>Asuinpaikka Suomessa on myös suotavaa, sillä emme toimita ulkomaille. Mukavia ostoshetkiä!</p>
-      <h3 style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 30}}> {category?.name}</h3>
-        {products.map(product => (
-          <div key={product.id} style={{display: 'inline-block', 'padding-left': '100px'}}>
-            <p style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#F6F6E3", fontSize: 20}}>
-              {product.name }
-            </p>
-            <div>
-            <img src={url + 'images/' + product.image + '.png'} alt="" />
+    <html>
+      <div>
+        <h3> {category?.name}</h3>
+
+        {products.map((product) => (
+          <div key={product.id} className="row" class="cards">
+            <div class="column">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src={url + "images/" + product.image + ".png"}
+                />
+                <div class="card-block">
+                  <h4 class="card-title">{product.name}</h4>
+                  <div class="card-text">{product.info}</div>
+                  <button class="button" onClick={(e) => addToCart(product)}>
+                    Lisää koriin
+                  </button>
+                </div>
+              </div>
             </div>
-            <button class="btn btn-secondary" type="button" onClick={e => addToCart(product)}>Lisää</button>
           </div>
         ))}
-    </div>
-  )
-  
-}
-
-
-
-
-//vanha sivu alla, pitää katsoa toi parallax ja tekstit vielä, kunhan sivut saa yhdistettyä
-/* import React from "react";
-import "./bootstrap.min.css"
-import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import Navbar1 from "./Navbar";
-
-export default function Home() {
-    return (
-      <div class="parallax" style={{ height: "1500px" }}>
-        <Navbar1 />
-        <h3 style={{ textAlign: "center", paddingTop: 350, color: "#F6F6E3"}}>Saunakaljat? Ruoan kanssa? Naama täyteen?</h3>
-        <p style={{ textAlign: "center", color: "#F6F6E3" }}>Joka makuun vaikka olisi paska maku</p>
-        <p style={{ textAlign: "center", color: "#F6F6E3" }}>- Vuodesta 2021</p>
-  
-        <p style={{ textAlign: "center", paddingTop: 150, color: "#F6F6E3" }}>TIK21KM Ryhmä1</p>
-        <p style={{ textAlign: "center", color: "#F6F6E3" }}>Emilia, Pekka, Eero, Mikko L, Mikko R</p>
-  
-  
       </div>
-    );
-  } */
+    </html>
+  );
+}
