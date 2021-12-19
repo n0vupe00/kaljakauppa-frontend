@@ -68,9 +68,9 @@ color: rgba(0, 0, 0, 0.68);
 
 .button{
   padding: 2rem;
-  border: 0.5rem solid rebeccapurple; 
+  border: 0.5rem solid black; 
   border-radius: 0.3rem;
   font-size: 1.5rem;
-  background: rebeccapurple;
-  color: black;
+  background: black;
+  color: white;
  }  
