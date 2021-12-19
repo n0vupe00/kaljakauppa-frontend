@@ -7,7 +7,6 @@ import Home from "./inc/Home";
 import Order from "./Order";
 import Modal from "./inc/Modal";
 
-import OriginalHome from "./inc/OriginalHome";
 
 const URL = "http://localhost/kaljakauppa-backend/";
 
