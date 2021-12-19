@@ -18,9 +18,11 @@ position: relative;
 
 .cards {
 margin: auto;
-  position: absolute;
+display: inline-block;
 padding: 1rem;
 max-width: min-content;
+vertical-align: top;
+
 }
 .card {
   

@@ -31,23 +31,26 @@ export default function Home({ url, category, addToCart }) {
         <h3> {category?.name}</h3>
 
         {products.map((product) => (
-          <div key={product.id} className="row" class="cards">
-            <div class="column">
-              <div class="card">
+          <div key={product.id} className="row" class="cards" >
+            
+              <div className="card" style={{ display: "inline-block" }}>
+              <h4 className="card-title">{product.name}</h4>
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={url + "images/" + product.image + ".png"}
                 />
-                <div class="card-block">
-                  <h4 class="card-title">{product.name}</h4>
-                  <div class="card-text">{product.info}</div>
-                  <button class="button" onClick={(e) => addToCart(product)}>
+                <div className="card-block">
+                  
+                  <div className="card-text">{product.info}</div>
+                  <div className="card-text">{product.alcohol} %</div>
+                  <div className="card-text">{product.price} €</div>
+                  <button className="button" onClick={(e) => addToCart(product)}>
                     Lisää koriin
                   </button>
                 </div>
               </div>
             </div>
-          </div>
+          
         ))}
       </div>
     </html>
