@@ -19,3 +19,10 @@ h1 {
 h3, td, label, p {
     font-family: 'Courier New', Courier, monospace;
 }
+.order{
+    background-image: url("./inc/bgimg/Olut_tausta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

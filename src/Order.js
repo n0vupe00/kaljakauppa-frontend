@@ -72,7 +72,7 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
 
     if (finished === false) {
         return (
-            <div style={{ 'padding-top': '100px' }}>
+            <div class = "order" style={{ 'padding-top': '100px' }}>
                 <h1 style={{ "paddingBottom": "50px", marginTop: "20px", fontSize: 42 }}>Tilausehdot</h1>
                 <p style={{ fontSize: 20 }}>Tilataksesi meiltä sinun tulee olla vähintään 18-vuotias, täysjärkinen ja olla muutakin kuin kärpäsiä lompakossa.</p>
                 <p style={{marginBottom: "50px", fontSize: 20 }}>Asuinpaikka Suomessa on myös suotavaa, sillä emme toimita ulkomaille. Mukavia ostoshetkiä!</p>
