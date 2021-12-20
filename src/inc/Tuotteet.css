@@ -14,6 +14,7 @@ font-weight: 700;
 line-height: 1.2857em;
 margin: 0;
 position: relative;
+margin-inline-start: 20px;
 }
 
 .cards {
@@ -32,8 +33,9 @@ font-size: 1em;
 padding: 0;
 border: none;
 border-radius: 0.28571429rem;
-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+box-shadow: 0 1px 3px 0 sienna, 0 0 0 1px sienna;
 max-width: 100%;
+margin: 15px;
 }
 
 .card-block {
@@ -42,9 +44,9 @@ position: relative;
 margin: 0;
 padding: 1em;
 border: none;
-border-top: 1px solid rgba(34, 36, 38, 0.1);
+border-top: 1px solid sienna;
 box-shadow: none;
-background-color: #d4d4d5;
+background-color: sienna;
 max-width: 100%;
 }
 
@@ -58,6 +60,7 @@ height: auto;
 .card-title {
 font-size: 1.28571429em;
 font-weight: 700;
+font-family: 'Courier New', Courier, monospace;
 line-height: 1.2857em;
 color: rgba(0, 0, 0, 0.68);
 padding: 2rem;
@@ -65,6 +68,8 @@ padding: 2rem;
 
 .card-text {
 clear: both;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 margin-top: 0.5em;
 color: rgba(0, 0, 0, 0.68);
 }
@@ -74,6 +79,7 @@ color: rgba(0, 0, 0, 0.68);
   border: 0.5rem solid black; 
   border-radius: 0.3rem;
   font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
   background: black;
   color: white;
   text-align: center;
