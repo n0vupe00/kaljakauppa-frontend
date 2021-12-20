@@ -1,7 +1,5 @@
 import "./OriginalHome.css";
 
-
-
 export default function OriginaHome() {
   return (
     <div id="etusivu" class="parallax" style={{ height: "1500px" }}>

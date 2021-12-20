@@ -61,7 +61,9 @@ export default function Navbar({ url, setCategory, cart }) {
                 style={{
                   fontFamily: 'Courier New',
                   fontWeight: 'bold',
+                  fontStyle: 'italic',
                   color: "#F6F6E3",
+                  fontSize: 25,
                 }}
                 href="#"
                 id="dropdown01"
