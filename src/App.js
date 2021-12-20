@@ -3,9 +3,10 @@ import { Route, Switch, useLocation } from "react-router";
 import "./App.css";
 import Navbar from "./inc/Navbar";
 import Footer from "./inc/Footer";
-import Home from "./inc/Home";
+import Home from "./inc/Tuotteet";
 import Order from "./Order";
 import Modal from "./inc/Modal";
+import OriginalHome from "./inc/OriginalHome"
 
 
 const URL = "http://localhost/kaljakauppa-backend/";
@@ -25,7 +26,7 @@ function App() {
 
   useEffect(() => {
     if (location.state !== undefined) {
-      if (location.pathname === "/") {
+      if (location.pathname === "/Tuotteet") {
         setCategory({ id: location.state.id, name: location.state.name });
       } else if (location.pathname === "/product") {
         setProduct({
@@ -76,15 +77,9 @@ function App() {
         <Navbar url={URL} setCategory={setCategory} cart={cart} />
         <div>
           <Switch>
-         {/*  <Route
-              path="/inc/OriginalHome"
-              render={() => (
-                <OriginalHome  />
-              )}
-              exact
-            /> */}
+            <Route path="/" exact component={OriginalHome} />
             <Route
-              path="/"
+              path="/Tuotteet"
               render={() => (
                 <Home url={URL} category={category} addToCart={addToCart} />
               )}
@@ -103,8 +98,10 @@ function App() {
               )}
             />
           </Switch>
-        </div>
+        </div> 
+       
       </div>
+      
 
       <Footer />
     </>

@@ -69,6 +69,7 @@ export default function Navbar({ url, setCategory, cart }) {
                 aria-expanded="false"
               >
                 Tuotteet
+
               </a>
               <ul className="dropdown-menu" aria-labelledby="dropdown01">
                 {categories.map((category) => (
@@ -76,7 +77,7 @@ export default function Navbar({ url, setCategory, cart }) {
                     <Link
                       className="dropdown-item"
                       to={{
-                        pathname: "/",
+                        pathname: "/Tuotteet",
                         state: {
                           id: category.id,
                           name: category.name,

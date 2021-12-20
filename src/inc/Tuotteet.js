@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./Home.css";
+import "./Tuotteet.css";
 import Modal from "./Modal";
 
-export default function Home({ url, category, addToCart }) {
+export default function Tuotteet({ url, category, addToCart }) {
   const [products, setProducts] = useState([]);
   const [modalOpen, setModalOpen] = useState(true);
   useEffect(() => {
