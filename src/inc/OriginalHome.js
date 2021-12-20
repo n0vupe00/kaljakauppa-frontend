@@ -24,8 +24,7 @@ export default function OriginaHome() {
         <img style={{ marginTop: "30px", marginBottom: "50px", height: "300px" }} src="logo/A-team_logo_final.png" alt="logo" />
       </div>
 
-      <p style={{ textAlign: "center", paddingTop: 150, color: "#F6F6E3" }}>TIK21KM Ryhmä1</p>
-      <p style={{ textAlign: "center", color: "#F6F6E3" }}>Emilia, Pekka, Eero, Mikko L, Mikko R</p>
+      
 
 
     </div>
