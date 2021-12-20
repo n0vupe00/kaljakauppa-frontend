@@ -144,6 +144,6 @@ export default function Order({ cart, updateAmount, removeFromCart, empty, url }
         );
     }
     else {
-        return (<h3 style={{ 'padding-top': '200px', fontFamily: "Courier New" }}>Kiitos tilauksestasi!</h3>);
+        return (<div  class = "order"> <h3 style={{ 'padding-top': '200px', fontFamily: "Courier New" }}>Kiitos tilauksestasi!</h3></div>);
     }
 }
