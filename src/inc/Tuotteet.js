@@ -27,7 +27,7 @@ export default function Tuotteet({ url, category, addToCart }) {
 
   return (
     <html>
-      <div>
+      <div id="tuotteet">
         <h3> {category?.name}</h3>
 
         {products.map((product) => (
