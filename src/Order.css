@@ -26,3 +26,7 @@ h3, td, label, p {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.buttons {
+    margin-bottom: 80px;
+}
