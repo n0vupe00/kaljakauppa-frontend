@@ -6,7 +6,7 @@ export default function OriginaHome() {
 
 
 
-      <h3 style={{ textAlign: "center", paddingTop: 350, color: "#F6F6E3", marginBottom: "50px" }}>Olemme A-Team Brewery, Suomen rajuin pienpanimo.</h3>
+      <h3 style={{ textAlign: "center", paddingTop: 350, color: "#F6F6E3", marginBottom: "50px", fontSize: 30 }}>Olemme A-Team Brewery, Suomen rajuin pienpanimo.</h3>
 
 
 
@@ -19,7 +19,7 @@ export default function OriginaHome() {
 
 
       <div style={{ textAlign: "center" }}>
-        <img style={{ marginTop: "30px", marginBottom: "50px", height: "300px" }} src="logo/A-team_logo_final.png" alt="logo" />
+        <img style={{ marginTop: "30px", marginBottom: "50px", height: "370px" }} src="logo/A-team_logo_final.png" alt="logo" />
       </div>
 
       
